@@ -1,20 +1,80 @@
 .container {
   min-height: 100vh;
-  padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  background:url('/assets/hero_bg.svg'), url('/assets/pizza_order.png'), black;
+  background-repeat: no-repeat;
+  background-size: 10%, 100%;
+  color: white
+}
+
+.navbar{
+  position: absolute;
+  display: flex;
+  top: 2.5%;
+  left: 5%;
+  width: 100%
+}
+
+.navbar ul{
+  width: fill-available
+}
+
+.navbar li{
+  margin-left: 5%
+}
+
+.navbar_social{
+  position: absolute;
+  right: 10%;
+  top: 18px;
+  display: flex;
+  gap:25px;
 }
 
 .main {
-  padding: 5rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.main_hero{
+  padding-top: 10%;
+  height: 100vh
+}
+
+.main_hero button{
+    background: #30B077;
+    border-radius: 24px;
+    border:none;
+    padding: 1em 2em;
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+    font-family: "Roboto", "Roboto", cursive;
+    display: block;
+    margin:auto;
+    margin-top:3%;
+  }
+
+.main_hero button:hover{
+  background: rgba(48,176,119,0.9);
+  cursor: pointer
+}
+
+.main_hero p{
+  text-align: center
+}
+
+.main_hero_img{
+  display: block;
+  width: 20%;
+  margin: auto;
+  margin-top: 25vh
 }
 
 .footer {
@@ -24,6 +84,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #C4C4C4;
 }
 
 .footer a {
@@ -111,6 +172,88 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
+}
+
+.about{
+  display: flex;
+  width: 90%;
+  margin:5% auto;
+}
+
+.about div{
+  flex: 1 1 0px
+}
+
+.about_text p{
+  width: 70%
+}
+
+.scale{
+  width: 40%;
+  margin:5% auto;
+  text-align: center
+}
+
+.attention{
+  text-align: start;
+  font-weight: bold;
+  background: #F3123B;
+  padding: 1.5em;
+  border-radius: 0.7em;
+  width: 82%;
+  margin:auto;
+}
+
+.section1{
+  width: 70%;
+  background: #C4C4C4;
+  height: 10em;
+  display: block;
+  margin:5% auto;
+}
+
+.gallery{
+  width: 90%;
+  height: 700px;
+  display: flex;
+  margin:5% auto;
+  gap:1em;
+  flex-wrap: wrap;
+}
+
+.gallery_item{
+  background: #C4C4C4;
+  flex: 1 0 21%;
+  border-radius: 10px
+}
+
+.FAQ{
+  background: #61D4A1;
+  color: black;
+  padding: 3%
+}
+.roadmap{
+  width:100%;
+  color: white;
+  padding: 3% 10%;
+  text-align: center
+}
+
+.FAQ h1{
+  text-align: center
+}
+
+.FAQ_item{
+  width: 60%;
+  margin:auto;
+}
+
+.roadmap_box{
+  background: #C4C4C4;
+  height: 500px;
+  display: block;
+  margin:5% auto;
+
 }
 
 @media (max-width: 600px) {
