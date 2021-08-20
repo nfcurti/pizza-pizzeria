@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background:url('/assets/hero_bg.svg'), url('/assets/pizza_order.png'), black;
+  background:url('/assets/hero_bg.svg'), url('/assets/OfficialBG.png'), black;
   background-repeat: no-repeat;
   background-size: 10%, 100%;
   color: white
@@ -15,7 +15,7 @@
   display: flex;
   top: 2.5%;
   left: 5%;
-  width: 100%
+  width: 90%
 }
 
 .navbar ul{
@@ -24,6 +24,15 @@
 
 .navbar li{
   margin-left: 5%
+}
+
+.navbar img{
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 30%;
+    margin: auto;
 }
 
 .navbar_social{
@@ -51,7 +60,7 @@
     background: #30B077;
     border-radius: 24px;
     border:none;
-    padding: 1em 2em;
+    padding: 0.5em 2em;
     font-size: 25px;
     font-weight: 400;
     color: white;
@@ -67,14 +76,44 @@
 }
 
 .main_hero p{
-  text-align: center
+  text-align: center;
+  margin-top: 2em
 }
 
 .main_hero_img{
+    display: block;
+    width: 20%;
+    margin: auto;
+    margin-top: 25vh;
+
+}
+
+.mintAmountButton{
+  border: 0.3px solid #F3123B;
+  background: none;
+  border-radius:1em;
+  padding: 1rem 4rem;
+  font-size: 24px;
+  color: white
+}
+
+.mintAmountButton:hover{
+  background: #F3123B;
+  color: white;
+  cursor: pointer
+}
+
+.infoTotal{
+  font-size: 12px;
+  margin-top: -3%;
+  opacity: 0.7
+}
+
+.main_hero_img_2{
   display: block;
-  width: 20%;
+  width: 70%;
   margin: auto;
-  margin-top: 25vh
+  margin-top: 6%
 }
 
 .footer {
@@ -194,8 +233,18 @@
   text-align: center
 }
 
+.scale_text span:hover{
+  cursor: pointer;
+  opacity: 0.7
+}
+
+.scale_text p:last-of-type{
+  cursor: default;
+  font-size: 30px
+}
+
 .attention{
-  text-align: start;
+  text-align: center;
   font-weight: bold;
   background: #F3123B;
   padding: 1.5em;
@@ -205,16 +254,15 @@
 }
 
 .section1{
-  width: 70%;
-  background: #C4C4C4;
-  height: 10em;
+  width: 100%;
+  background: url('/assets/section_art.png');
+  height: 20em;
   display: block;
   margin:5% auto;
 }
 
 .gallery{
   width: 90%;
-  height: 700px;
   display: flex;
   margin:5% auto;
   gap:1em;
@@ -222,9 +270,20 @@
 }
 
 .gallery_item{
-  background: #C4C4C4;
   flex: 1 0 21%;
   border-radius: 10px
+}
+
+.gallery_item img{
+  width: 100%;
+    transition-duration: 0.8s;
+    transition-property: transform;
+
+}
+
+.gallery_item img:hover{
+   transform: rotate(360deg);
+
 }
 
 .FAQ{
@@ -249,11 +308,45 @@
 }
 
 .roadmap_box{
-  background: #C4C4C4;
-  height: 500px;
   display: block;
   margin:5% auto;
 
+}
+
+
+.ecosystem_row{
+  display:flex;
+  width: 100%;
+  gap:1em;
+}
+
+.ecosystem_row div{
+  flex: 1 0 21%;
+  height: 300px;
+  background: white;
+  border: 2px solid black;
+  color: black;
+  border-radius:5px;
+  padding-left:2rem;
+  text-align: start
+}
+
+.ecosystem_row div>p{
+  width: 80%;
+  font-size: 14px
+}
+
+.ecosystem_row div:hover{
+  cursor: pointer;
+  background: black;
+  background-position: 0%;
+  color: white;
+  transition: 0.5s all ease-out;
+  border:1px solid white;
+}
+
+
+.ecosystem_row p{
 }
 
 @media (max-width: 600px) {
